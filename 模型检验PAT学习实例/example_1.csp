@@ -1,0 +1,7 @@
+﻿channel c 0; //or channel c 1; 
+      var x = 1;
+      
+
+P = c!x{ x = 2 } -> P;
+      Q = c?y{ x = y; } -> Q;
+      A = P ||| Q;

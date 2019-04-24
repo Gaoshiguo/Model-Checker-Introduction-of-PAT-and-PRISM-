@@ -1,0 +1,16 @@
+﻿//c!a.b -> P                          -- channel output//判断缓冲区是否是a,b.如果有先进先出弹出通道C，如果不是就等待
+
+//c?x.y -> P                         -- channel input//判断通道C的缓冲区是不是满了，如果是等待，否存入通道
+//c?1 -> P                            -- channel input with expected value//判断通道C是否非空且顶部元素为1，是存入通道，否等待
+
+//c?[x+y+9>10]x.y-> P      -- channel input with guard expression//判断x+y+9的值是否大于10，大于将x,y存入通道，否，等待
+
+
+
+
+channel c 1;
+
+Sender(i) = c!i -> Sender(i);
+      Receiver() = c?x -> a.x -> Receiver();
+
+System() = Sender(5) ||| Receiver();

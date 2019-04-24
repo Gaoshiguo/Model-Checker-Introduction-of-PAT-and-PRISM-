@@ -1,0 +1,32 @@
+﻿//@@ Model 1@@
+#define N 1;//定义全局常量，通过使用(#define 常量名 数字 )这种语法来实现。常量可以为整型或者布尔类型，可以为正，也可以为负
+enum{red,green,blue};//使用enum关键字来定义枚举类型,枚举类型指的是当一个变量有多个取值的时候,可以通过使用枚举类型来定义
+var Pro = 0;//定义全局变量,貌似只能定义为整型
+var board = [3, 5, 6, 0, 2, 7, 8, 4, 1];//定义一个固定数组
+var leader[3];//定义一个固定长度的空数组
+var matrix[3*N][3];//定义一个多维数组(矩阵),其中N为已经定义的常量
+
+P() = a { matrix[1][9] = 0 } -> Skip;//要为数组中的特定元素指定值，可以使用事件前缀。
+//where N is a constant defined.//同样,用户还可以定义变量的取值范围通过赋予变量上界/下界/或者上界及下界
+var knight : {0..} = 0;//给定下界
+var board_1 : {0..10} = [3, 5, 6, 0, 2, 7, 8, 4, 1];//给定上下界
+var leader_1[N] : {..N-1};//给定上界
+//数组的初始化,为了使建模简单,PAT提供了数组的初始化功能
+#define N_1 2;
+var array = [1(2), 3..6, 7(N_1*2), 12..10];//注意,数字后面的括号代表这个数字后面根几个重复的数字,这个数组应为[1,1,3,4,5,6,7,7,7,7,12,11,10]
+//the above is same as the following
+var array_1 = [1, 1, 3, 4, 5, 6, 7, 7, 7, 7, 12, 11, 10];
+//为了建模方便,用户可以定义自己的数据类型,由于初始PAT支持在整型/布尔类型，并不支持哈希表、栈、队列等这些高级数据类型，
+//因此需要导入相应的包，当然也可以自己使用C或C++来自己编写相应的包再导入
+#import "PAT.Lib.Hashtable";//导入哈希表文件包
+//#import "C:\Program Files\Intel\Hashtable.dll";//导入处理异常包
+//var <HashTable> table; //use the class name here as the type of the variable.
+//var <HashTable> table = new HashTable(4); //initialize the variable using the constructors provided.
+
+
+//在PAT中，各个进程（process）之间的信息（message）传递是通过通道（channel）来实现的，而通道（channel）的语法定义如下所示：
+channel c 5;//“channel”是一个关键词专门用来定义通道，C是通道名，5是通道的缓冲区的大小，该值必须大于等于0，注意：《当通道的缓冲区值为0时，代表同步发送或接受信息，即其不具备缓存的功能》
+
+//PAT同样支持宏(Marco)
+
+#define goal s == 0;
