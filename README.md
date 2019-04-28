@@ -8,6 +8,6 @@ PAT是一款有新加坡国立大学研发的模型检验工具，其推出的�
 
 ### PAT User Manual（PAT说明文档）
 接下来我们来看一下有关PAT模型检验工具的相关说明文档。[User Manual](https://pat.comp.nus.edu.sg/wp-source/resources/OnlineHelp/htm/index.htm)版本是基于PAT3.5版本的。
-**我们来看一下introduction**
-![]({{site.baseurl}}/https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT-PRISM-/blob/master/IMAGE/1.png)
+**我们来看一下 introduction **
+![image](https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT-PRISM-/blob/master/IMAGE/1.png)
  
