@@ -8,6 +8,12 @@ PAT是一款有新加坡国立大学研发的模型检验工具，其推出的�
 
 ### PAT User Manual（PAT说明文档）
 接下来我们来看一下有关PAT模型检验工具的相关说明文档。[User Manual](https://pat.comp.nus.edu.sg/wp-source/resources/OnlineHelp/htm/index.htm)版本是基于PAT3.5版本的。
+
 **我们来看一下introduction**
+
 ![image](https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT-PRISM-/blob/master/IMAGE/1.png)
+
+这个的大概意思讲的就是PAT是一个独立的框架，用于支持并发，实时系统和其他可能域的模拟和推理。 它具有用户友好的界面，特征鲜明的模型编辑器和动画模拟器。 最重要的是，PAT实现了各种模型检查的技术，以满足不同的属性，例如死锁，散度，可达性，具有公平性假设的LTL属性，细化检查和概率模型检查。 为了获得良好的性能，在PAT中实现了高级优化技术，例如， 部分降阶，对称性约简，过程计数器抽象，并行模型检验。
+
+**总而言之就是这个软件呢比较灵活，可以支持语言框架的拓展，跟PRISM和SPIN不太一样，具体怎么来拓展，我也刚开始看是学，还没整明白**
  
