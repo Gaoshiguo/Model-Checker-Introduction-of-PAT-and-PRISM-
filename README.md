@@ -20,4 +20,6 @@ PAT是一款有新加坡国立大学研发的模型检验工具，其推出的�
 ### 1.1PAT工具的说明文档
 首先是安装，安装就不做太多说明了，前面给的有网址，大家去加载一路next就ok，需要说明的是，Mac和Unix系统得下载一个MONO的工具包，就不多说了。下载完了之后，打开是这样的
 
+![image](https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT-PRISM-/blob/master/IMAGE/2.png)
 
+初始是英文版的，在view栏的language选项里可以调成中文版的
