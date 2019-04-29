@@ -30,3 +30,18 @@ PAT是一款有新加坡国立大学研发的模型检验工具，其推出的�
 CSP的全称是communicating sequential processes（CSP）也叫通信顺序进程模型，最初是一种基于通信的协议进程。
 
 在CSP模型中，先定义一个模型，定义语法为：`//@@Model Name@@ ` 全局常量和全局变量的语法规则为：`#define max 5;` 和`var knight`,常量还支持枚举类型，变量还支持数组类型。CSP模型中有一种比较特殊的概念叫通道（Channels），我感觉就像是缓冲区，用来存储一些信息，多半是数字。我们可以通过以下的语法来定义一个通道`channel c 5;`,代表的意思是定义了一个通道，通道名为c，通道最多可存储的规模是5个。
+```
+1.c!a.b -> P                          -- channel output
+
+2.c?x.y -> P                         -- channel input
+
+3.c?1 -> P                            -- channel input with expected value
+
+4.c?[x+y+9>10]x.y-> P      -- channel input with guard expression
+
+```
+1代表的意思是a,b都是表达式，若通道的缓存区未满，将a,b的表达式的复合值存储在缓存区中以FIFO的规则输出，若通道已满，则等待
+2代表的意思是先检索队列顶的元素，若缓存区为非空，将分配给x和y，然后执行p
+3代表的意思是判断缓冲区顶的元素是否为1，若为1就执行p，否则等待
+4代表的的意思是在x+y+9<10的条件下，检索缓冲区是否已满，未满则将分配给x和y，否则等待
+
