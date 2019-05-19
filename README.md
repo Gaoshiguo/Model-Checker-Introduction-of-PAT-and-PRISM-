@@ -56,4 +56,5 @@ CSP的全称是communicating sequential processes（CSP）也叫通信顺序进�
 
 我们从语法开始详细讲解PRISM的用法，PRISM一共提供四种模型，所有的实验都必须基于这四种模型之上，分别是：DTMC（离散时间马尔可夫链）、CTMC（连续时间马尔可夫链）、MDP（马尔科夫决策过程）、PTA（概率有限机）。
 
-在文件名开头必须声明使用哪种模型，语法如下：`module modelname endmodel`
+在文件名开头必须声明使用哪种模型，语法如下：`mdp` or `dtmc` or `ctmc` or `pta` 代表你将使用一下几种模型其中的一种来进行实验，接下来开始建立model,每一个model都代表一个process，即每一个model代表一个进程，语法如下：`model modelname endmodel`，每一个model包括两部分的内容，变量variables和命令commands，变量描述系统可能存在的状态，命令描述系统的行为。
+
