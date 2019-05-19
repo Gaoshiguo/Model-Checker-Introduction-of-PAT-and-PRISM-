@@ -53,3 +53,7 @@ CSP的全称是communicating sequential processes（CSP）也叫通信顺序进�
 首先是PRISM模型检验工具的下载，[下载](http://www.prismmodelchecker.org/download.php)
 
 下载后的PRISM工具打开后是这个样子的![image](https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT-PRISM-/blob/master/IMAGE/3.png)
+
+我们从语法开始详细讲解PRISM的用法，PRISM一共提供四种模型，所有的实验都必须基于这四种模型之上，分别是：DTMC（离散时间马尔可夫链）、CTMC（连续时间马尔可夫链）、MDP（马尔科夫决策过程）、PTA（概率有限机）。
+
+在文件名开头必须声明使用哪种模型，语法如下：`module modelname endmodel`
