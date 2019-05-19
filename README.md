@@ -58,3 +58,12 @@ CSP的全称是communicating sequential processes（CSP）也叫通信顺序进�
 
 在文件名开头必须声明使用哪种模型，语法如下：`mdp` or `dtmc` or `ctmc` or `pta` 代表你将使用一下几种模型其中的一种来进行实验，接下来开始建立model,每一个model都代表一个process，即每一个model代表一个进程，语法如下：`model modelname endmodel`，每一个model包括两部分的内容，变量variables和命令commands，变量描述系统可能存在的状态，命令描述系统的行为。
 
+当前PRISM仅支持整型和布尔类型的变量，假设某个进程可能有的状态有三种，可以如下定义：`x : [0..2] init 0;`代表该进程的初始状态为0，可能的状态有0/1/2三种。
+对于布尔类型的变量，语法如下：`b : bool init false; `代表该进程可能的状态有两种true or false
+
+如果我们忽略赋予变量初始值，那么系统会默认将范围值的最低值设为变量的初始值，布尔类型默认为false。
+
+同样需要提及的是，对于某些无法确定范围的变量，类似于在“近似模型检验”和“最快适应性检验”中，我们可以设置无范围变量，如
+```x : int;
+y : int init 3;
+```
