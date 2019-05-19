@@ -51,3 +51,5 @@ CSP的全称是communicating sequential processes（CSP）也叫通信顺序进�
 我们主要通过官方的说明文档来学习如何通过这个工具来帮助我们进行随机模型检验的研究，[官方文档](http://www.prismmodelchecker.org/manual/)
 
 首先是PRISM模型检验工具的下载，[下载](http://www.prismmodelchecker.org/download.php)
+
+下载后的PRISM工具打开后是这个样子的![image](https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT-PRISM-/blob/master/IMAGE/3.png)
