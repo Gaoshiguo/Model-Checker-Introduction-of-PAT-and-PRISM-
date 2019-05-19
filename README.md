@@ -46,3 +46,4 @@ CSP的全称是communicating sequential processes（CSP）也叫通信顺序进�
 4代表的的意思是在x+y+9<10的条件下，检索缓冲区是否已满，未满则将分配给x和y，否则等待
 
 ## 二、PRISM随机模型检验工具
+下面是随机模型检验工具PRISM的官方网址：[PRISM官网]（http://www.prismmodelchecker.org/manual/ThePRISMLanguage/Introduction）
