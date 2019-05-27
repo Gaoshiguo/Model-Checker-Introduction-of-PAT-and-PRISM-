@@ -141,4 +141,24 @@ P=? [ F s=7 & d=x ]
 首先我们需要在properties模块中导入一个pctl文件
 ![image](https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT-and-PRISM-/blob/master/IMAGE/4.png)
 
+![image](https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT-and-PRISM-/blob/master/IMAGE/5.png)
+
+然后我们需要输入一个值，这个值就代表着x的值，是我们希望验证色子为该值的概率
+
+![image](https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT-and-PRISM-/blob/master/IMAGE/7.png)
+
+我们输入了一个色子不可能出现的值：10
+
+接下来让我们看看概率是多少？
+
+![image](https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT-and-PRISM-/blob/master/IMAGE/8.png)
+很明显，概率是0
+
+我们又输入了一个正常的值：3
+![image](https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT-and-PRISM-/blob/master/IMAGE/9.png)
+
+看看验证的结果如何？
+![image](https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT-and-PRISM-/blob/master/IMAGE/10.png)
+
+
 
