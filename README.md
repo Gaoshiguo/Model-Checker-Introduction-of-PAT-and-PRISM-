@@ -138,5 +138,7 @@ P=? [ F s=7 & d=x ]
 
 我们在PRISM中看看如何来进行验证？
 
+首先我们需要在properties模块中导入一个pctl文件
+![image](https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT-and-PRISM-/blob/master/IMAGE/4.png)
 
 
