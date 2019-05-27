@@ -119,4 +119,4 @@ d:[0..6] init 0;
 endmodule
 ```
 我们在prism上先在module模块上建模，是一个色子模型，用字母s来代表程序进行的步数，用字母d代表色子的值，我们可以一张图来直观的理解色子模型。
-![image](https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT and PRISM-/blob/master/IMAGE/sz.png)
+![image](https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT-and-PRISM-/blob/master/IMAGE/sz.png)
