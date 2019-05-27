@@ -120,3 +120,23 @@ endmodule
 ```
 我们在prism上先在module模块上建模，是一个色子模型，用字母s来代表程序进行的步数，用字母d代表色子的值，我们可以一张图来直观的理解色子模型。
 ![image](https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT-and-PRISM-/blob/master/IMAGE/sz.png)
+
+现在我们有了这个色子模型，接下里需要我们做的就是验证，为了验证，首先我们需要写一些性质规约（properties），有关性质规约的写法，参见Principles of Model Checking，由于我们使用的是DTMC模型，因此我们应当先建一个文件夹，文件名后缀为.pctl，比如我们想知道，该模型最终色子的值为5的概率为多少？
+
+我们可以这样来写性质规约：
+
+```
+const int x;
+
+P=? [ F s=7 & d=x ]
+```
+这两句话的含义是：定义一个常量x，p=？意思是：概率为多少？
+
+[F S=7 & d=x] 这句话的含义是：最终程序到达状态7并且色子的值为x
+
+合起来的意思是：最终程序到达状态7并且色子的值为x的概率是多少？
+
+我们在PRISM中看看如何来进行验证？
+
+
+
