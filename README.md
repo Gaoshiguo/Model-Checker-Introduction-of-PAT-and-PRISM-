@@ -152,12 +152,15 @@ P=? [ F s=7 & d=x ]
 接下来让我们看看概率是多少？
 
 ![image](https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT-and-PRISM-/blob/master/IMAGE/8.png)
+
 很明显，概率是0
 
 我们又输入了一个正常的值：3
+
 ![image](https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT-and-PRISM-/blob/master/IMAGE/9.png)
 
 看看验证的结果如何？
+
 ![image](https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT-and-PRISM-/blob/master/IMAGE/10.png)
 
 
