@@ -163,5 +163,13 @@ P=? [ F s=7 & d=x ]
 
 ![image](https://github.com/Gaoshiguo/Model-Checker-Introduction-of-PAT-and-PRISM-/blob/master/IMAGE/10.png)
 
+*2.1 有关指令的一些解释
 
+指令：commands，在PRISM中，主要是通过指令来描述一些条件的，指令标识符为“[]”
+
+例如
+`
+：[] x=0 -> 0.8:(x'=0) + 0.2:(x'=1);
+`
+这段指令所代表的的意思就是：*如果x的值等于0，那么有0.8的概率x的值变成0，也有0.2的概率x的值变成1
 
